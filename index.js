@@ -25,6 +25,20 @@ stopButton.addEventListener("click", () => {
   mindarThree.renderer.setAnimationLoop(null);
 });
 
+// var joy = new JoyStick('joyDiv');
+// setInterval(function(){ 
+//    console.log("x="+ joy.GetX());
+//  }, 50);
+
+var Joy1 = new JoyStick('joyDiv', {}, function(stickData) {
+  // joy1IinputPosX.value = stickData.xPosition;
+  // joy1InputPosY.value = stickData.yPosition;
+  // joy1Direzione.value = stickData.cardinalDirection;
+  // joy1X.value = stickData.x;
+  // joy1Y.value = stickData.y;
+  console.log(stickData.x);
+});
+
 
 const start = async () => {
   await mindarThree.start();
