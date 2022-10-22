@@ -1,0 +1,29 @@
+    .Body {
+      margin: 0;
+    }
+
+    .Container {
+      width: 100vw;
+      height: 100vh;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .control {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: 2;
+    }
+    .mindar-ui-overlay{
+      z-index: 0;
+    }
+    .joystick{
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width:200px;
+      height:200px;
+    }
